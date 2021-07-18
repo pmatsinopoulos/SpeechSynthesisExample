@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E5DB824E26A494C100DFBFD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB824D26A494C100DFBFD8 /* main.m */; };
+		E5DB825F26A4ED3900DFBFD8 /* CheckError.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB825E26A4ED3900DFBFD8 /* CheckError.m */; };
+		E5DB826326A4EE0500DFBFD8 /* NSPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB826226A4EE0500DFBFD8 /* NSPrint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		E5DB824A26A494C100DFBFD8 /* SpeechSynthesisExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpeechSynthesisExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DB824D26A494C100DFBFD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5DB825D26A4ED1C00DFBFD8 /* CheckError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
+		E5DB825E26A4ED3900DFBFD8 /* CheckError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckError.m; sourceTree = "<group>"; };
+		E5DB826226A4EE0500DFBFD8 /* NSPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPrint.m; sourceTree = "<group>"; };
+		E5DB826526A4EE1100DFBFD8 /* NSPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSPrint.h; sourceTree = "<group>"; };
+		E5DB826726A4F47B00DFBFD8 /* AppState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +64,22 @@
 		E5DB824C26A494C100DFBFD8 /* SpeechSynthesisExample */ = {
 			isa = PBXGroup;
 			children = (
+				E5DB825C26A4ECFD00DFBFD8 /* Utils */,
 				E5DB824D26A494C100DFBFD8 /* main.m */,
+				E5DB826726A4F47B00DFBFD8 /* AppState.h */,
 			);
 			path = SpeechSynthesisExample;
+			sourceTree = "<group>";
+		};
+		E5DB825C26A4ECFD00DFBFD8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E5DB825D26A4ED1C00DFBFD8 /* CheckError.h */,
+				E5DB825E26A4ED3900DFBFD8 /* CheckError.m */,
+				E5DB826226A4EE0500DFBFD8 /* NSPrint.m */,
+				E5DB826526A4EE1100DFBFD8 /* NSPrint.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DB824E26A494C100DFBFD8 /* main.m in Sources */,
+				E5DB825F26A4ED3900DFBFD8 /* CheckError.m in Sources */,
+				E5DB826326A4EE0500DFBFD8 /* NSPrint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
