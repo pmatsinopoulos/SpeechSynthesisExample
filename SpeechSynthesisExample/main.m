@@ -69,11 +69,12 @@ void WaitSpeechToFinish(AppState *appState) {
 }
 
 int main(int argc, const char * argv[]) {
+  if (argc < 2) {
+    NSLog(@"1st argument: You need to give the phrase to be spoken out.\n");
+    return 1;
+  }
+  
   @autoreleasepool {
-    if (argc < 2) {
-      NSLog(@"1st argument: You need to give the phrase to be spoken out.\n");
-      return 1;
-    }
     
     SpeechChannel channel;
     
